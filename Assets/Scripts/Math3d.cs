@@ -2,6 +2,11 @@ using UnityEngine;
 using System.Collections;
 using System;
 
+/**
+ * Clase para el control de la prolongacion del tiro parabolico
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+*/
 public class Math3d : MonoBehaviour
 {
 

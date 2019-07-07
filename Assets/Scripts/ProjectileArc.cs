@@ -1,5 +1,11 @@
 using UnityEngine;
 
+/**
+ * Clase encargada de la generacion del movimiento que emite el projectile lanzado
+ * con movimiento de proyectil
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+ */
 public class ProjectileArc : MonoBehaviour 
 {
     [SerializeField]

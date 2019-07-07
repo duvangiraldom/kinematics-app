@@ -3,6 +3,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+/**
+ * Clase para controlar la interfaz GUI del usuario en la pantalla de tiro parabolico 
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+*/
 public class CannonInterface : MonoBehaviour 
 {
     [SerializeField]

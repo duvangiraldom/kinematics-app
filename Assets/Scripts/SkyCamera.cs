@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/**
+ * Clase para el control de la camara
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+ */
 public class SkyCamera : MonoBehaviour 
 {
     [SerializeField]

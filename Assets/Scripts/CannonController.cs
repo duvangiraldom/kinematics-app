@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/**
+ * Clase para controlar el cannon en la pantalla de tiro parabolico
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+*/
 public class CannonController : MonoBehaviour 
 {
     [SerializeField]

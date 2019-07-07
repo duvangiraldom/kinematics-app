@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ *Clase para controlar el flash del dispositivo 
+ * @author Duvan Ignacio Giraldo Montoya
+*/
 public class FlashCamera : MonoBehaviour
 {
     private GameObject CanvasFlash;

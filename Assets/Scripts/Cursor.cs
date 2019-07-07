@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/**
+ * Clase para el control del cursor
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+*/
 public class Cursor : MonoBehaviour 
 {    
 	void Update () 

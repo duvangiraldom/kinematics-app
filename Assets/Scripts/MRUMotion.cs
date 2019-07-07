@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ *Clase para el control del movimiento Rectilineo Uniforme 
+ * @author Duvan Ignacio Giraldo Montoya
+*/
 public class MRUMotion : MonoBehaviour
 {
     private bool useVelocity, useDistance, useTime;

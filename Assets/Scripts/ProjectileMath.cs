@@ -1,5 +1,11 @@
 using UnityEngine;
 
+/**
+ * Clase encargada de toda la logica de la fisica necesaria para la generacion del
+ * movimiento de proyectiles
+ * Tomado de https://github.com/IronWarrior/ProjectileShooting
+ * @author https://roystan.net/
+ */
 public static class ProjectileMath
 {
     /// <summary>

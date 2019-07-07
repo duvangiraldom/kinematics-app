@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+
 /// <summary>
 /// Attach this to any object that is either a ParticleSystem, or has one or more ParticleSystems
 /// as child objects. After all ParticleSystems (including the children and this object's) have finished emitting
 /// the object will self-destruct, or alternatively if an audio source is playing will self-destruct after both it
 /// and the particle systems have finished playing
 /// </summary>
+/// 
+/// Tomado de https://github.com/IronWarrior/ProjectileShooting
+/// @author https://roystan.net/
+
 public class ParticleMaster : MonoBehaviour {
 
     [SerializeField]
