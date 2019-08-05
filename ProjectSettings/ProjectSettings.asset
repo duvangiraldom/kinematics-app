@@ -13,10 +13,10 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: duvangiraldom
-  productName: kinematic-app
+  productName: Kinematics App
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.14782842, g: 0.16453345, b: 0.20754719, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.0627451, g: 0.0627451, b: 0.0627451, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0.5
@@ -44,8 +44,8 @@ PlayerSettings:
     duration: 2
   - logo: {fileID: 21300000, guid: 7d61238568e124b478fa5a16587ae174, type: 3}
     duration: 2
-  - logo: {fileID: 21300000, guid: 45bb9f5bd2535fd498ef8051e2d4d467, type: 3}
-    duration: 2
+  - logo: {fileID: 21300000, guid: 5d7b83e0d17ae274eae0695cb3cfff5e, type: 3}
+    duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -591,7 +591,8 @@ PlayerSettings:
   ps4attribEyeToEyeDistanceSettingVR: 0
   ps4IncludedModules: []
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: b9627d0903eb2964bb3d2359b8871ecf,
+    type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 
   webGLMemorySize: 256
