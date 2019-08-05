@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /**
  *Clase para el control de las scenes 
@@ -9,17 +10,26 @@ using UnityEngine.SceneManagement;
 */
 public class MenuController : MonoBehaviour
 {
+    public GameObject loadingScreen;
+    public Slider slider;
+    public Text textProgress;
+
     public void changeScene(string nameScene)
     {
-        SceneManager.LoadScene(nameScene);
+        StartCoroutine(LoadAsynchronously(nameScene));
     }
 
-    /**
-    public void OnGUI(string message)
+    IEnumerator LoadAsynchronously(string nameScene)
     {
-        Rect rect = new Rect();
-        rect.Set(0, 0, Screen.width / 2, Screen.height / 2);
-        GUI.Box(rect, message);
+        AsyncOperation operation =  SceneManager.LoadSceneAsync(nameScene);
+        loadingScreen.SetActive(true);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+            slider.value = progress;
+            textProgress.text = progress * 100f + "%";
+            yield return null;
+        }
     }
-    **/
+
 }
