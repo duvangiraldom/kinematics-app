@@ -13,4 +13,13 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(nameScene);
     }
+
+    /**
+    public void OnGUI(string message)
+    {
+        Rect rect = new Rect();
+        rect.Set(0, 0, Screen.width / 2, Screen.height / 2);
+        GUI.Box(rect, message);
+    }
+    **/
 }
