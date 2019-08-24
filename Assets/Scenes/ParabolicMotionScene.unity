@@ -257,85 +257,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.5, y: 0}
   m_SizeDelta: {x: -5.0001, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &114993115
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 114993116}
-  - component: {fileID: 114993118}
-  - component: {fileID: 114993117}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &114993116
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114993115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8256, y: 1.8256, z: 1.8256}
-  m_Children: []
-  m_Father: {fileID: 1842053541}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.20925586, y: 0.26881918}
-  m_AnchorMax: {x: 0.7671397, y: 0.7565425}
-  m_AnchoredPosition: {x: 3.5, y: -0.98932076}
-  m_SizeDelta: {x: -3, y: 4.6838}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &114993117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114993115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 53bd2da7b9ef39c4d9448fad5700e900, type: 3}
-    m_FontSize: 22
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Usage guide
---- !u!222 &114993118
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114993115}
-  m_CullTransparentMesh: 0
 --- !u!1 &133209031
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NPC Name Here
+  m_Text: 'Title '
 --- !u!1 &198337621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is dummy dialogue... It's not really too interesting.
+  m_Text: Dummy Dialog
 --- !u!1 &490101760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,7 +4675,7 @@ GameObject:
   - component: {fileID: 1842053543}
   - component: {fileID: 1842053542}
   m_Layer: 5
-  m_Name: TestButton
+  m_Name: InfoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4770,15 +4691,14 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.45811266, y: 0.45811266, z: 0.45811266}
-  m_Children:
-  - {fileID: 114993116}
+  m_Children: []
   m_Father: {fileID: 1250390869}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.354, y: 0.19331561}
-  m_AnchorMax: {x: 0.5776378, y: 0.39800003}
-  m_AnchoredPosition: {x: -0.5, y: 0.20000458}
-  m_SizeDelta: {x: 160, y: 42}
+  m_AnchorMin: {x: 0.33663774, y: 0.14784038}
+  m_AnchorMax: {x: 0.44027546, y: 0.47742206}
+  m_AnchoredPosition: {x: -1, y: 0.6109009}
+  m_SizeDelta: {x: 67.78, y: 61.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842053542
 MonoBehaviour:
@@ -4886,8 +4806,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c585864bca3091549917b1e724818d2b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
