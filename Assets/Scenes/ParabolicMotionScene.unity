@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.29411763, g: 0.29411763, b: 0.29411763, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.09019608, g: 0.09019608, b: 0.09019608, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2129,7 +2129,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
-    m_PressedColor: {r: 0.49264705, g: 0.49264705, b: 0.49264705, a: 1}
+    m_PressedColor: {r: 0.41509432, g: 0.2721609, b: 0.2721609, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4715,9 +4715,19 @@ MonoBehaviour:
   dialogue:
     name: Usage guide parabolic shot
     sentences:
-    - Hey there! My name is Dwayne...
-    - I'm here to guide you through your dangerous adventures...
-    - And wake you up in the morning of course!
+    - If the light is low, the first step is to turn on the flashlight.
+    - You must have good light so that Vuforia can capture the Kinematics app logo
+      and process it.
+    - The second step is to focus the camera on the Kinematics app logo.
+    - Press the initial speed button if we want to use the initial speed...
+    - Or we press the button to use initial angle if we want to use the initial speed.
+    - Following, we enter the initial velocity or the depreciation angle as the case
+      may be.
+    - Select a drop point of the projectile in our real environment and press the
+      Shoot button.
+    - Finally, we can see in detail the movement and the variables that are submitted.
+    - We hope you like it and that you can learn and share this educational experience
+      with your friends.
 --- !u!114 &1842053543
 MonoBehaviour:
   m_ObjectHideFlags: 0
