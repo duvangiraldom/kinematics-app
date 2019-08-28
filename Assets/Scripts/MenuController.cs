@@ -27,7 +27,7 @@ public class MenuController : MonoBehaviour
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
             slider.value = progress;
-            textProgress.text = progress * 100f + "%";
+            textProgress.text = System.Math.Round(progress, 2) * 100f + "%";
             yield return null;
         }
     }

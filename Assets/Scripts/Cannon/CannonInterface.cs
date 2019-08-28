@@ -58,7 +58,7 @@ public class CannonInterface : MonoBehaviour
     public void Shot()
     {
         cannon.Fire();
-        timeOfFlightText.text = Mathf.Clamp(cannon.lastShotTimeOfFlight - (Time.time - cannon.lastShotTime), 0, float.MaxValue).ToString("F3");
+        timeOfFlightText.text = Mathf.Clamp(cannon.lastShotTimeOfFlight - (Time.time - cannon.lastShotTime), 0, float.MaxValue).ToString("F");
     }
 
     public void SetInitialFireAngle(string angle)

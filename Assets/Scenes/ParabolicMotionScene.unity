@@ -1366,10 +1366,10 @@ RectTransform:
   m_Father: {fileID: 133209032}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.02521617, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.7042275, y: 1}
-  m_AnchoredPosition: {x: 0.000015258789, y: 0}
-  m_SizeDelta: {x: -37.2, y: -12.03}
+  m_AnchoredPosition: {x: 0.06590271, y: 0}
+  m_SizeDelta: {x: -38.65, y: -12}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &521946597
 MonoBehaviour:
@@ -1393,7 +1393,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1404,7 +1404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time of flight:'
+  m_Text: 'Time of flight(s):'
 --- !u!222 &521946598
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4720,7 +4720,7 @@ MonoBehaviour:
       and process it.
     - The second step is to focus the camera on the Kinematics app logo.
     - Press the initial speed button if we want to use the initial speed...
-    - Or we press the button to use initial angle if we want to use the initial speed.
+    - Or we press the Use initial angle button to use angle.
     - Following, we enter the initial velocity or the depreciation angle as the case
       may be.
     - Select a drop point of the projectile in our real environment and press the
@@ -5236,7 +5236,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
