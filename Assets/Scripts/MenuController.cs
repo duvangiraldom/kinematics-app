@@ -32,4 +32,8 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    public void OpenUrlDownloadIconKinematicsApp()
+    {
+        Application.OpenURL("https://i.ibb.co/Pz416gP/icon-Kinematcs-App.png");
+    }
 }
