@@ -10,6 +10,8 @@ using UnityEngine.UI;
 */
 public class MenuController : MonoBehaviour
 {
+    public GameObject infoShotComponent;
+
     public GameObject loadingScreen;
     public Slider slider;
     public Text textProgress;
@@ -35,5 +37,14 @@ public class MenuController : MonoBehaviour
     public void OpenUrlDownloadIconKinematicsApp()
     {
         Application.OpenURL("https://i.ibb.co/Pz416gP/icon-Kinematcs-App.png");
+    }
+
+    public void ShowShotInfo(bool showInfoShot){
+        if (showInfoShot){
+            infoShotComponent.SetActive(true);
+        }
+        else{
+            infoShotComponent.SetActive(false);
+        }
     }
 }
