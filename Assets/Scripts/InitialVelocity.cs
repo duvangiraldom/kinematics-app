@@ -12,6 +12,7 @@ public class InitialVelocity : MonoBehaviour
     public GameObject useInitialAngle;
     public GameObject inputInitialVelocity;
     public GameObject inputInitialAngle;
+    public GameObject useFireAtLowAngle;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class InitialVelocity : MonoBehaviour
         inputInitialVelocity.SetActive(false);
         useInitialAngle.SetActive(false);
         inputInitialAngle.SetActive(true);
+        useFireAtLowAngle.SetActive(false);
 
     }
 
@@ -28,6 +30,7 @@ public class InitialVelocity : MonoBehaviour
         inputInitialVelocity.SetActive(true);
         useInitialAngle.SetActive(true);
         inputInitialAngle.SetActive(false);
+        useFireAtLowAngle.SetActive(true);
     }
 
     public void useInitialAngleController()
@@ -36,6 +39,7 @@ public class InitialVelocity : MonoBehaviour
         inputInitialVelocity.SetActive(false);
         useInitialAngle.SetActive(false);
         inputInitialAngle.SetActive(true);
+        useFireAtLowAngle.SetActive(false);
     }
 
 }
