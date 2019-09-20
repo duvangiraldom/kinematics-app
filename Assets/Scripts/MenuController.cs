@@ -34,11 +34,6 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public void OpenUrlDownloadIconKinematicsApp()
-    {
-        Application.OpenURL("https://i.ibb.co/Pz416gP/icon-Kinematcs-App.png");
-    }
-
     public void ShowShotInfo(bool showInfoShot){
         if (showInfoShot){
             infoShotComponent.SetActive(true);
@@ -47,4 +42,5 @@ public class MenuController : MonoBehaviour
             infoShotComponent.SetActive(false);
         }
     }
+
 }

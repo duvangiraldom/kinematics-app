@@ -531,8 +531,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23156251, y: 0.35127783}
   m_AnchorMax: {x: 0.7615313, y: 0.7986667}
-  m_AnchoredPosition: {x: 7.299988, y: -5}
-  m_SizeDelta: {x: -14.6, y: -6.199997}
+  m_AnchoredPosition: {x: -6.700012, y: -50.679993}
+  m_SizeDelta: {x: 29.7, y: -6.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748681021
 MonoBehaviour:
@@ -600,14 +600,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8301887, g: 0.7880951, b: 0.33285868, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7c4c7591f92d1de40ad224c19b256c5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 944e0b3385b1ff246bb4975f90186efa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.627451}
+  m_Color: {r: 0.99215686, g: 1, b: 1, a: 0.53333336}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -845,6 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb68c3fa16fc404295bc569773fb63d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infoShotComponent: {fileID: 0}
   loadingScreen: {fileID: 426137941}
   slider: {fileID: 2053014504}
   textProgress: {fileID: 1258782050}
