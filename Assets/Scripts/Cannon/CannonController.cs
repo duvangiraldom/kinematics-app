@@ -101,4 +101,9 @@ public class CannonController : MonoBehaviour
         cannonBase.rotation =  Quaternion.LookRotation(planarDirection) * Quaternion.Euler(-90, -90, 0);
         turret.localRotation = Quaternion.Euler(90, 90, 0) * Quaternion.AngleAxis(turretAngle, Vector3.forward);        
     }
+
+    public float getSpeedCurrent()
+    {
+        return this.currentSpeed;
+    }
 }

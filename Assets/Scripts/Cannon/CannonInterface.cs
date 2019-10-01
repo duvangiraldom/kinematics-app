@@ -20,6 +20,18 @@ public class CannonInterface : MonoBehaviour
     Text timeOfFlightText;
 
     [SerializeField]
+    Text initialVelocityText;
+
+    [SerializeField]
+    Text finalVelocityText;
+
+    [SerializeField]
+    Text aceelerationText;
+
+    [SerializeField]
+    Text distanceText;
+
+    [SerializeField]
     float defaultFireSpeed = 35;
 
     [SerializeField]
@@ -58,7 +70,12 @@ public class CannonInterface : MonoBehaviour
     public void Shot()
     {
         cannon.Fire();
-        timeOfFlightText.text = Mathf.Clamp(cannon.lastShotTimeOfFlight - (Time.time - cannon.lastShotTime), 0, float.MaxValue).ToString("F");
+        SetInitialVelocityText();
+        SetFinalVelocityText();
+        SetAccelerationText();
+        SetTimeOfFligthText();
+        SetDistanceText();
+
     }
 
     public void SetInitialFireAngle(string angle)
@@ -79,5 +96,31 @@ public class CannonInterface : MonoBehaviour
     public void UseInitialAngle(bool value)
     {
         useInitialAngle = value;
+    }
+
+
+    public void SetTimeOfFligthText()
+    {
+        timeOfFlightText.text = Mathf.Clamp(cannon.lastShotTimeOfFlight - (Time.time - cannon.lastShotTime), 0, float.MaxValue).ToString("F");
+    }
+
+    public void SetInitialVelocityText()
+    {
+        initialVelocityText.text = cannon.getSpeedCurrent().ToString();
+    }
+
+    public void SetFinalVelocityText()
+    {
+        initialVelocityText.text = initialFireSpeed.ToString();
+    }
+
+    public void SetAccelerationText()
+    {
+
+    }
+
+    public void SetDistanceText()
+    {
+
     }
 }

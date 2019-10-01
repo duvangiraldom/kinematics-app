@@ -1552,7 +1552,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCursor: {fileID: 924629320}
   cannon: {fileID: 697746750}
-  timeOfFlightText: {fileID: 0}
+  timeOfFlightText: {fileID: 46506652}
+  initialVelocityText: {fileID: 345436789}
+  finalVelocityText: {fileID: 118252173}
+  aceelerationText: {fileID: 1706561485}
+  distanceText: {fileID: 1192688583}
   defaultFireSpeed: 35
   defaultFireAngle: 45
 --- !u!1 &374405101
