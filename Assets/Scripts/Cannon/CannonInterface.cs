@@ -111,7 +111,7 @@ public class CannonInterface : MonoBehaviour
 
     public void SetFinalVelocityText()
     {
-        initialVelocityText.text = initialFireSpeed.ToString();
+        finalVelocityText.text = cannon.getSpeedCurrent().ToString();
     }
 
     public void SetAccelerationText()
@@ -121,6 +121,6 @@ public class CannonInterface : MonoBehaviour
 
     public void SetDistanceText()
     {
-
+        distanceText.text = Mathf.Abs(cannon.transform.position.x - targetCursor.transform.position.x).ToString();
     }
 }
