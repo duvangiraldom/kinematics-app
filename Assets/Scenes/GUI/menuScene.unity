@@ -553,15 +553,15 @@ RectTransform:
   m_GameObject: {fileID: 425397102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4673629, y: 1.4673629, z: 1.4673629}
   m_Children: []
   m_Father: {fileID: 1817867798}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.09372989, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: -0.34051514}
-  m_SizeDelta: {x: 0, y: 0.2599945}
+  m_AnchoredPosition: {x: 34.597, y: -113.75}
+  m_SizeDelta: {x: 41, y: -20.659}
   m_Pivot: {x: 0.45663583, y: -0.31409523}
 --- !u!114 &425397104
 MonoBehaviour:
@@ -1206,7 +1206,7 @@ RectTransform:
   m_GameObject: {fileID: 1704618185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.88236, y: 0.88236, z: 0.88236}
   m_Children:
   - {fileID: 1871136868}
   m_Father: {fileID: 204018832}
@@ -1290,7 +1290,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 66b09c8f93e355d43bab83f3ac05bac6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2e4b48d04d5602044b7f1a8f268aa5b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1526,7 +1526,7 @@ RectTransform:
   m_GameObject: {fileID: 1817867797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.65785855, y: 0.65785855, z: 1.0148126}
   m_Children:
   - {fileID: 425397103}
   m_Father: {fileID: 204018832}
@@ -1740,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.1289978}
-  m_SizeDelta: {x: -0.000030518, y: 0.30000305}
+  m_AnchoredPosition: {x: 27.5, y: -0.1289978}
+  m_SizeDelta: {x: 55.1, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871136869
 MonoBehaviour:
