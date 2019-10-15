@@ -5,6 +5,14 @@ using UnityEngine.UI;
 
 public class ParabolicMotionEquation : MonoBehaviour
 {
+    [SerializeField]
+    Transform cannon;
+
+    [SerializeField]
+    Transform target;
+
+    [SerializeField]
+    Text HeightText;
 
     [SerializeField]
     Text initialVelocityText;
@@ -18,26 +26,28 @@ public class ParabolicMotionEquation : MonoBehaviour
     [SerializeField]
     Text distanceText;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        SetDistanceText();
+        SetInitialVelocityText();
+        SetFinalVelocityText();
+        SetHeightText();
+
     }
 
     public void SetInitialVelocityText()
     {
-        //initialVelocityText.text = cannon.getSpeedCurrent().ToString();
+        //initialVelocityText.text = cannon.GetCurrentSpeed().ToString("F");
     }
 
     public void SetFinalVelocityText()
     {
-      //  finalVelocityText.text = cannon.getSpeedCurrent().ToString();
+       //finalVelocityText.text = cannon.GetCurrentSpeed().ToString("F");
     }
 
     public void SetAccelerationText()
@@ -47,6 +57,13 @@ public class ParabolicMotionEquation : MonoBehaviour
 
     public void SetDistanceText()
     {
-     //  distanceText.text = Mathf.Abs(cannon.transform.position.x - targetCursor.transform.position.x).ToString();
+        distanceText.text = Mathf.Sqrt(((cannon.position.x - target.position.x) * (cannon.position.x - target.position.x))
+                                     + ((cannon.position.z - target.position.z) * (cannon.position.z - target.position.z))).
+                                     ToString("F");
+    }
+
+    public void SetHeightText()
+    {
+        HeightText.text = target.position.y.ToString("F");
     }
 }

@@ -44,14 +44,13 @@ public class CannonInterface : MonoBehaviour
     void Update()
     {
         if (useInitialAngle)
+        {
             cannon.SetTargetWithAngle(targetCursor.transform.position, initialFireAngle);
+        }
         else
+        {
             cannon.SetTargetWithSpeed(targetCursor.transform.position, initialFireSpeed, useLowAngle);
-
-        //if (Input.GetButtonDown("Fire1") && !EventSystem.current.IsPointerOverGameObject())
-        //{
-            //cannon.Fire();
-        //}
+        }
 
     }
 
