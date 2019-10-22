@@ -2,8 +2,7 @@ using UnityEngine;
 
 /**
  * Clase para el control del cursor
- * Tomado de https://github.com/IronWarrior/ProjectileShooting
- * @author https://roystan.net/
+ * @author Duvan Giraldo
 */
 public class Cursor : MonoBehaviour 
 {

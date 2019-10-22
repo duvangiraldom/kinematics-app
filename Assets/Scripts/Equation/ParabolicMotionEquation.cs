@@ -57,13 +57,13 @@ public class ParabolicMotionEquation : MonoBehaviour
 
     public void SetDistanceText()
     {
-        distanceText.text = Mathf.Sqrt(((cannon.position.x - target.position.x) * (cannon.position.x - target.position.x))
-                                     + ((cannon.position.z - target.position.z) * (cannon.position.z - target.position.z))).
-                                     ToString("F");
+        //distanceText.text = Mathf.Sqrt(((cannon.position.x - target.position.x) * (cannon.position.x - target.position.x))
+         //                            + ((cannon.position.z - target.position.z) * (cannon.position.z - target.position.z))).
+         //                            ToString("F");
     }
 
     public void SetHeightText()
     {
-        HeightText.text = target.position.y.ToString("F");
+        //HeightText.text = target.position.y.ToString("F");
     }
 }
