@@ -10,71 +10,42 @@ using UnityEngine.UI;
 */
 public class MRUMotion : MonoBehaviour
 {
-    private bool useVelocity, useDistance, useTime;
-    private float velocity;
-    private float distance;
-    private float time;
+    //public GameObject buttonStart;
+    //public GameObject buttonStop;
+
+    private float speed;
 
     void Start()
     {
-        velocity = 0f;
-        distance = 0f;
-        time = 0f;
+        speed = 50.0f;
+        //stopBall();
     }
 
-    void Update(){
-        FindValues();
-    }
-
-    private void FindValues()
+    void Update()
     {
-        if (useVelocity && useDistance)
+        // if (buttonStart)
+        // {
+            transform.Rotate(Vector3.right * speed * Time.deltaTime);
+        // }
+    }
+
+    public void SetSpeed(string Speed)
+    {
+        if(Speed != null)
         {
-            time = distance / velocity;
+            speed = Convert.ToSingle(Speed);
         }
-        else if (useVelocity && useTime)
-        {
-            distance = velocity * time;
-        }
-        else if (useDistance && useTime)
-        {
-            velocity = distance / time;
-        }
-        else
-        {
-            Debug.Log("Missing values for find result");
-        }
-    }
+    }  
 
-    public void SetVelocity(string VelocityInput)
-    {
-        velocity = Convert.ToSingle(VelocityInput);
-    }
+    // void moveBall()
+    // {
+    //     buttonStop.SetActive(true);
+    //     buttonStart.SetActive(false);
+    // }
 
-    public void SetDistance(string DistanceInput)
-    {
-        distance = Convert.ToSingle(DistanceInput);
-    }
-
-    public void SetTime(string TimeInput)
-    {
-        time = Convert.ToSingle(TimeInput);
-    }
-
-    public void OnClickUseVelocity()
-    {
-        useVelocity = true;
-    }
-
-    public void OnClickUseDistance()
-    {
-        useDistance = true;
-    }
-
-    public void OnClickUseTime()
-    {
-        useTime = true;
-    }
-
-
+    // void stopBall()
+    // {
+    //     buttonStart.SetActive(true);
+    //     buttonStop.SetActive(false);
+    // }
 }
