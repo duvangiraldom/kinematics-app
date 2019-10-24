@@ -10,25 +10,19 @@ using UnityEngine.UI;
 */
 public class MRUMotion : MonoBehaviour
 {
-    //public GameObject buttonStart;
-    //public GameObject buttonStop;
-
+    public GameObject target;
     private float speed;
 
     void Start()
     {
-        speed = 50.0f;
-        //stopBall();
+        speed = 10f;
     }
 
     void Update()
     {
-        // if (buttonStart)
-        // {
-            transform.Rotate(Vector3.right * speed * Time.deltaTime);
-        // }
+        float step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
     }
-
     public void SetSpeed(string Speed)
     {
         if(Speed != null)
@@ -37,15 +31,4 @@ public class MRUMotion : MonoBehaviour
         }
     }  
 
-    // void moveBall()
-    // {
-    //     buttonStop.SetActive(true);
-    //     buttonStart.SetActive(false);
-    // }
-
-    // void stopBall()
-    // {
-    //     buttonStart.SetActive(true);
-    //     buttonStop.SetActive(false);
-    // }
 }
