@@ -4,6 +4,7 @@ using UnityEngine;
  * Clase para controlar el cannon en la pantalla de tiro parabolico
  * Tomado de https://github.com/IronWarrior/ProjectileShooting
  * @author https://roystan.net/
+ * @modificated Duvan Giraldo
 */
 public class CannonController : MonoBehaviour 
 {
@@ -41,8 +42,11 @@ public class CannonController : MonoBehaviour
     public float lastShotTime { get; private set; }
     public float lastShotTimeOfFlight { get; private set; }
 
+    private bool useAngle = true;
+
     public void SetTargetWithAngle(Vector3 point, float angle)
     {
+        useAngle = true;
         currentAngle = angle;
 
         Vector3 direction = point - firePoint.position;
@@ -60,6 +64,7 @@ public class CannonController : MonoBehaviour
 
     public void SetTargetWithSpeed(Vector3 point, float speed, bool useLowAngle)
     {
+        useAngle = false;
         currentSpeed = speed;
 
         Vector3 direction = point - firePoint.position;
@@ -71,7 +76,7 @@ public class CannonController : MonoBehaviour
         bool targetInRange = ProjectileMath.LaunchAngle(speed, distance, yOffset, Physics.gravity.magnitude, out angle0, out angle1);
 
         if (targetInRange)
-            currentAngle = useLowAngle ? angle1 : angle0;                     
+            currentAngle = useLowAngle ? angle1 : angle0;
 
         projectileArc.UpdateArc(speed, distance, Physics.gravity.magnitude, currentAngle, direction, targetInRange);
         SetTurret(direction, currentAngle * Mathf.Rad2Deg);
@@ -110,5 +115,20 @@ public class CannonController : MonoBehaviour
     public float GetCurrentAngle()
     {
         return this.currentAngle;
+    }
+
+    public float GetCurrentTimeOfFlight()
+    {
+        return this.currentTimeOfFlight;
+    }
+
+    public Transform GetTurrent()
+    {
+        return this.turret;
+    }
+
+    public bool GetUseAngle()
+    {
+        return this.useAngle;
     }
 }
