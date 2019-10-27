@@ -10,8 +10,6 @@ using UnityEngine.UI;
 public class ParabolicMotionEquation : MonoBehaviour
 {
     [SerializeField]
-    Cursor targetCursor;
-    [SerializeField]
     CannonController cannon;
 
     [SerializeField]

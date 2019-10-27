@@ -10,7 +10,16 @@ using UnityEngine.UI;
 */
 public class MRUMotion : MonoBehaviour
 {
-    public GameObject target;
+
+    [SerializeField]
+    Transform target;
+
+    [SerializeField]
+    Text timeText;
+
+    [SerializeField]
+    Text distanceText;
+
     private float speed;
 
     void Start()
@@ -22,13 +31,30 @@ public class MRUMotion : MonoBehaviour
     {
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+
+        GetDistance();
+        GetTime();
     }
+
     public void SetSpeed(string Speed)
     {
         if(Speed != null)
         {
             speed = Convert.ToSingle(Speed);
         }
-    }  
+    }
 
+    public void GetTime()
+    {
+       timeText.text = (Convert.ToSingle(distanceText.text) / speed).ToString("F");
+        
+    }
+
+    public void GetDistance()
+    {
+        distanceText.text = Mathf.Sqrt(((transform.position.x - target.transform.position.x) * (transform.position.x - target.transform.position.x))
+                                           + ((transform.position.z - target.transform.position.z) * (transform.position.z - target.transform.position.z))).
+                                           ToString("F");
+    }
 }
+
