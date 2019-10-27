@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 /**
  *Clase para el control del movimiento Rectilineo Uniforme 
- * @author Duvan Ignacio Giraldo Montoya
+ * @author Duvan Giraldo
 */
 public class MRUMotion : MonoBehaviour
 {
