@@ -86,6 +86,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        var rigidBodiesComponents = GetComponentsInChildren<Rigidbody>(true);
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -98,6 +99,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+        foreach (var component in rigidBodiesComponents)
+        {
+            if (component.name == "Player")
+                component.useGravity = true;
+        }
     }
 
 
@@ -106,6 +113,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        var rigidBodiesComponents = GetComponentsInChildren<Rigidbody>(true);
 
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -118,6 +126,15 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+        foreach (var component in rigidBodiesComponents)
+        {
+            if (component.name == "Player")
+            {
+                component.useGravity = false;
+                component.velocity = new Vector3(0, 0, 0);
+            }
+        }
     }
 
     #endregion // PROTECTED_METHODS

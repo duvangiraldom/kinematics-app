@@ -8,19 +8,13 @@ using UnityEngine;
 */
 public class FlashCamera : MonoBehaviour
 {
-    private GameObject CanvasFlash;
-    private GameObject btnON;
-    private GameObject btnOFF;
+    public GameObject btnON;
+    public GameObject btnOFF;
 
     void Start()
     {
         Vuforia.CameraDevice.Instance.SetFlashTorchMode(false);
-        CanvasFlash = GameObject.Find("flashLight");
-        CanvasFlash.SetActive(true);
-        btnON = GameObject.Find("btnOn");
-        btnON.SetActive(false);
-        btnOFF = GameObject.Find("btnOff");
-        btnON.SetActive(true);
+        FlashOff();
     }
 
     public void FlashOn()
@@ -28,6 +22,8 @@ public class FlashCamera : MonoBehaviour
         Vuforia.CameraDevice.Instance.SetFlashTorchMode(true);
         btnOFF.SetActive(true);
         btnON.SetActive(false);
+        Debug.Log("Flash on");
+
     }
 
     public void FlashOff()
@@ -35,6 +31,7 @@ public class FlashCamera : MonoBehaviour
         Vuforia.CameraDevice.Instance.SetFlashTorchMode(false);
         btnOFF.SetActive(false);
         btnON.SetActive(true);
+        Debug.Log("Flash off");
     }
 
 }
