@@ -29,9 +29,4 @@ public class AboutController : MonoBehaviour
         textInfo.SetActive(false);
         textControls.SetActive(true);
     }
-
-    public void OpenUrlDownloadIconKinematicsApp()
-    {
-        Application.OpenURL("https://i.ibb.co/Pz416gP/icon-Kinematcs-App.png");
-    }
 }

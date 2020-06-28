@@ -53,6 +53,11 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
 
+    public void OpenUrl(string url)
+    {
+        Application.OpenURL(url);
+    }
+
     private IEnumerator ActivationInfoLevelInit()
     {
         buttonInit.SetActive(true);

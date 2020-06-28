@@ -15,15 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/UI/infoScene.unity
     guid: 43e98681c1db657449f4b83caa3acd1a
   - enabled: 1
-    path: Assets/Scenes/UI/iconScene.unity
-    guid: a0681a0b4633e2b448302289b47f4fb2
-  - enabled: 1
-    path: Assets/Scenes/Game/ParabolicMotionScene.unity
-    guid: 825084d5635cd5f47ad4dfe7e418ac1f
+    path: Assets/Scenes/Game/MRUScene.unity
+    guid: f8b3eff50dfd02a4c8fc75af45e9d2c7
   - enabled: 1
     path: Assets/Scenes/Game/MUAScene.unity
     guid: 93bf1d4706a3ff3468df1368f240d551
   - enabled: 1
-    path: Assets/Scenes/Game/MRUScene.unity
-    guid: f8b3eff50dfd02a4c8fc75af45e9d2c7
+    path: Assets/Scenes/Game/ParabolicMotionScene.unity
+    guid: 825084d5635cd5f47ad4dfe7e418ac1f
   m_configObjects: {}
